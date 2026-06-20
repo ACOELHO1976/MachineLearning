@@ -9,44 +9,48 @@ Aluno: Alex Joaquim Coelho
 O objetivo deste projeto é prever o cancelamento de clientes (Churn) em uma empresa de telecomunicações.
 O termo Churn refere-se ao momento em que um cliente decide interromper o uso do serviço, ou seja, cancelar seu contrato.
 
-# Tipo de problema
+## Tipo de problema
 Este é um problema de classificação binária, onde:
-1 → Cliente cancelou o serviço (Churn)
-0 → Cliente permaneceu ativo
+  1 → Cliente cancelou o serviço (Churn)
+  0 → Cliente permaneceu ativo
 
-# Motivação
+## Motivação
 A perda de clientes impacta diretamente a receita da empresa. Identificar clientes com alto risco de cancelamento permite a aplicação de estratégias de retenção, como ofertas e melhorias no atendimento.
 
-# Por que usar Machine Learning?
+## Por que usar Machine Learning?
 O cancelamento de clientes depende de múltiplos fatores, como:
 -  tipo de contrato
 -  valor pago
 -  tempo de permanência
 Modelos de Machine Learning conseguem identificar padrões complexos nesses dados e prever o comportamento futuro dos clientes.
 
-⚠️ Premissas e limitações
-Os dados representam comportamento passado
-Não indicam causalidade, apenas correlação
-Dataset simulado (IBM)
-📁 Dataset
-Fonte: IBM Telco Customer Churn
-Registros: ~7000 clientes
-Variável alvo: Cancelamento (Churn)
-📌 Variáveis importantes
-tenure → Tempo como cliente
-MonthlyCharges → Valor mensal
-Contract → Tipo de contrato
-InternetService → Serviço de internet
-⚠️ Limitações
-Dados simulados
-Pode não representar todos os cenários reais
-Dataset: Microdados do Censo Escolar da Educação Básica 2024 (INEP)
+## Premissas e limitações
+-  Os dados representam comportamento passado
+-  Não indicam causalidade, apenas correlação
+-  Dataset simulado (IBM)
 
-Onde encontrar o Dataset original: https://download.inep.gov.br/dados_abertos/microdados_censo_escolar_2024.zip
+## Dataset
+-  Fonte: IBM Telco Customer Churn
+-  Registros: ~7000 clientes
+-  Variável alvo: Cancelamento (Churn)
+-  Onde encontrar o Dataset original: "https://raw.githubusercontent.com/IBM/telco-customer-churn-on-icp4d/master/data/Telco-Customer-Churn.csv"
 
-Onde encontrar o Dataset usado aqui: https://github.com/ACOELHO1976/Analise_Exploratoria
+## Variáveis importantes
+-  tenure → Tempo como cliente
+-  MonthlyCharges → Valor mensal
+-  Contract → Tipo de contrato
+-  InternetService → Serviço de internet
 
-Onde encontrar a análise realizada: https://colab.research.google.com/github/ACOELHO1976/Analise_Exploratoria/blob/main/mvpAnalisededados.ipynb
+## Limitações
+-  Dados simulados
+-  Pode não representar todos os cenários reais
 
-Algumas observações: Tanto o arquivo CVS, quanto arquivos que ajudam a complemetar e entender mais do trabalho podem ser encontrados no endereço
+## Conclusão
+
+Este projeto desenvolveu um modelo para prever o cancelamento de clientes.
+
+O modelo Random Forest apresentou o melhor desempenho, sendo capaz de identificar padrões importantes relacionados ao churn.
+
+## Onde encontrar a análise realizada: 
+https://colab.research.google.com/github/ACOELHO1976/Analise_Exploratoria/blob/main/mvpAnalisededados.ipynb
 
